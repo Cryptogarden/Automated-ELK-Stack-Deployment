@@ -93,6 +93,6 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include hosts and targets.
 - Run the playbook and navigate to http://10.1.0.4:5601 to check that the installation worked as expected.
 
-The playbook to setup the network and deploy the Elk server is “elk_stack-playbook.yml”. It should be copied to the home/etc/ansible folder.
+The playbook to setup the network and deploy the Elk server is “elk_stack-playbook.yml”. It should be copied to the home/etc/ansible/ folder.
 - To make Ansible run the playbook on a different machine, edit the config.yml file in the /home/etc/ansible directory. You will specify which machine to install a specified playbook to by providing the IP addresses for each machine in the Ansible config.yml file.
 - To ensure the playbook was successfully deployed on a machine, this can be verified by navigating to http://<*new elk stack VMs IP*>:5601
