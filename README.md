@@ -29,7 +29,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting inbound access to the network.
-- The load balancer provides redundancy, helping to prevent any downtime. The advantage of using a jump box is to prevent and connections with the internet facing side of the network and provides an extra layer of security.
+- The load balancer provides redundancy, helping to prevent any downtime. The advantage of using a jump box is to prevent connections with the internet facing side of the network and provides an extra layer of security.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of VMs on the network and system metrics.
 - Filebeat is used to detect changes to the filesystem by collecting Apache logs.
@@ -93,6 +93,6 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include hosts and targets.
 - Run the playbook and navigate to http://10.1.0.4:5601 to check that the installation worked as expected.
 
-The playbook to setup the network and deploy the Elk server is ìelk_stack-playbook.ymlî. It should be copied to the home/etc/ansible folder.
+The playbook to setup the network and deploy the Elk server is ‚Äúelk_stack-playbook.yml‚Äù. It should be copied to the home/etc/ansible folder.
 - To make Ansible run the playbook on a different machine, edit the config.yml file in the /home/etc/ansible directory. You will specify which machine to install a specified playbook to by providing the IP addresses for each machine in the Ansible config.yml file.
 - To ensure the playbook was successfully deployed on a machine, this can be verified by navigating to http://<*new elk stack VMs IP*>:5601
